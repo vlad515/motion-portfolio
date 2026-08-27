@@ -4,8 +4,12 @@
  * asymmetric title-sequence composition and restrained motion. Does this reinforce the philosophy?
  */
 import { useEffect, useState } from "react";
-import { ArrowDownRight, ArrowUpRight, Menu, Plus, X } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+
+const assetOrigin = import.meta.env.VITE_PUBLIC_ASSET_ORIGIN ?? "";
+const asset = (path: string) => `${assetOrigin}${path}`;
+const matchCaseUrl = `${import.meta.env.BASE_URL}case/match-2-0`;
 
 const projects = [
   {
@@ -13,7 +17,7 @@ const projects = [
     title: "Дизайн упаковки для секс-игрушек",
     type: "Sex toys packaging",
     category: "Брендинг",
-    image: "/manus-storage/case-sex-toys-packaging_73d433b0.png",
+    image: asset("/manus-storage/case-sex-toys-packaging_73d433b0.png"),
     imageAlt: "Дизайн упаковки для секс-игрушек",
     href: "https://dprofile.ru/case/69522/dizain-upakovki-dlia-seks-igrusek-sex-toys-packaging",
     className: "project-card--wide",
@@ -23,7 +27,7 @@ const projects = [
     title: "Chin Miao",
     type: "Ресторан китайской кухни",
     category: "Брендинг / Графика",
-    image: "/manus-storage/case-chin-miao_274dfdf4.png",
+    image: asset("/manus-storage/case-chin-miao_274dfdf4.png"),
     imageAlt: "Фирменная графика ресторана Chin Miao",
     href: "https://dprofile.ru/case/10899/chin-miao",
     className: "project-card--tall",
@@ -33,7 +37,7 @@ const projects = [
     title: "Neos",
     type: "Брендинг для кроссовок",
     category: "Брендинг / Графика",
-    image: "/manus-storage/case-neos_4d2d1921.png",
+    image: asset("/manus-storage/case-neos_4d2d1921.png"),
     imageAlt: "Брендинг Neos на упаковке и карточках",
     href: "https://dprofile.ru/case/10898/neos",
     className: "project-card--third",
@@ -81,7 +85,7 @@ export default function Home() {
     <main>
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
         <a className="brand-mark" href="#top" aria-label="На главную">
-          <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="Кошачий знак VLAD MOTION" />
+          <img src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="Кошачий знак VLAD MOTION" />
         </a>
         <p className="header-role">VLAD KOCHENKOV<br />motion design</p>
         <nav className="desktop-nav" aria-label="Основная навигация">
@@ -101,7 +105,7 @@ export default function Home() {
 
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-media" aria-hidden="true">
-          <img src="/manus-storage/blue-motion-hero_fab970bc.jpg" alt="" />
+          <img src={asset("/manus-storage/blue-motion-hero_fab970bc.jpg")} alt="" />
           <div className="hero-image-shade" />
         </div>
         <motion.div className="hero-meta" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.15 }}>
@@ -130,7 +134,7 @@ export default function Home() {
       <section className="showreel-section" aria-labelledby="showreel-title">
         <div className="showreel-heading">
           <div>
-            <p className="eyebrow"><span className="splice-line" />00 / Showreel <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
+            <p className="eyebrow"><span className="splice-line" />00 / Showreel <img className="section-cat-mark" src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="" /></p>
             <h2 id="showreel-title">Смотреть<br /><em>шоурил.</em></h2>
           </div>
           <p>57 секунд движения: 2D и 3D моушн, предметная визуализация, симуляции и кинетическая типографика.</p>
@@ -140,13 +144,13 @@ export default function Home() {
           <iframe src="https://www.youtube-nocookie.com/embed/inF690u-h1s?rel=0&modestbranding=1" title="Vlad Kochenkov — Motion Designer Showreel 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
           <div className="showreel-caption"><span>VLAD KOCHENKOV / SHOWREEL 2025</span><span>00:57 / PLAY IN PLACE</span></div>
         </div>
-        <a className="showreel-case-link" href="/case/match-2-0"><span>FEATURED CASE / 01</span><strong>Совпадение / МЭТЧ 2.0</strong><ArrowUpRight size={20} /></a>
+        <a className="showreel-case-link" href={matchCaseUrl}><span>FEATURED CASE / 01</span><strong>Совпадение / МЭТЧ 2.0</strong><ArrowUpRight size={20} /></a>
       </section>
 
       <section className="work-section" id="work" aria-labelledby="work-title">
         <div className="section-heading">
           <div>
-            <p className="eyebrow"><span className="splice-line" />Selected work <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
+            <p className="eyebrow"><span className="splice-line" />Selected work <img className="section-cat-mark" src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="" /></p>
             <h2 id="work-title">Новые работы<br /><em>в монтаже.</em></h2>
           </div>
           <p className="section-note">Кейсы появятся здесь по мере выхода. Пока — место для следующих сильных кадров.</p>
@@ -175,7 +179,7 @@ export default function Home() {
       <section className="motion-lab" id="process" aria-labelledby="process-title">
         <div className="lab-rail" aria-hidden="true"><span>03 / MOTION SYSTEM</span><span>VLAD KOCHENKOV</span><span>LIVE STUDY</span></div>
         <div className="lab-heading">
-          <p className="eyebrow"><span className="splice-line" />Внутри процесса <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
+          <p className="eyebrow"><span className="splice-line" />Внутри процесса <img className="section-cat-mark" src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="" /></p>
           <h2 id="process-title">Движение<br />имеет <em>вес.</em></h2>
           <p>Выберите параметр, чтобы посмотреть, из каких слоёв собирается мой подход к движению.</p>
         </div>
@@ -205,7 +209,7 @@ export default function Home() {
         <div className="channel-panel">
           <div className="channel-panel-top"><span>TELEGRAM / @MOTION_THIS</span><span>ACTIVE CHANNEL</span></div>
           <div className="channel-core">
-            <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="Кошачий знак канала Моушенируй это" />
+            <img src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="Кошачий знак канала Моушенируй это" />
             <div className="channel-core-copy">
               <p>Кейсы, моушн-приёмы и AI в реальной работе.</p>
               <p>WIP, инструменты, промпты и разборы — без шума.</p>
@@ -222,7 +226,7 @@ export default function Home() {
         <aside className="about-ledger" aria-hidden="true"><span>05 / PROCESS ACT</span><span>FRAME 272–318</span><span>SIGNAL / VLAD</span></aside>
         <span className="about-seq-number" aria-hidden="true">05</span>
         <div className="about-copy">
-          <p className="eyebrow"><span className="splice-line" />О практике <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
+          <p className="eyebrow"><span className="splice-line" />О практике <img className="section-cat-mark" src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="" /></p>
           <h2 id="about-title">Идея не должна<br />стоять на <em>месте.</em></h2>
           <p className="about-lead">Я работаю между стратегией и ощущением: нахожу визуальное напряжение, собираю систему и задаю ей ритм.</p>
           <p className="about-caption">Moscow / Direction / 2026<br />Каждый кадр должен менять интонацию.</p>
@@ -252,7 +256,7 @@ export default function Home() {
             <span className="signal-label signal-label--bottom">CHANNEL OPEN / 24–7</span>
             <div className="signal-ring signal-ring--outer" />
             <div className="signal-ring signal-ring--inner" />
-            <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" />
+            <img src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="" />
           </div>
         </div>
         <div className="contact-footer contact-footer--terminal">

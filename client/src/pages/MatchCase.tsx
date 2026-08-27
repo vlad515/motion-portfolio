@@ -5,6 +5,10 @@
  */
 import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 
+const assetOrigin = import.meta.env.VITE_PUBLIC_ASSET_ORIGIN ?? "";
+const asset = (path: string) => `${assetOrigin}${path}`;
+const homeUrl = import.meta.env.BASE_URL;
+
 const formats = [
   ["01", "9:16", "Промо для соцсетей и мобильных экранов"],
   ["02", "16:9", "Классическая горизонтальная версия"],
@@ -23,12 +27,12 @@ export default function MatchCase() {
   return (
     <main className="case-page">
       <header className="case-header">
-        <a className="case-brand" href="/" aria-label="Вернуться на главную VLAD MOTION">
-          <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="Кошачий знак VLAD MOTION" />
+        <a className="case-brand" href={homeUrl} aria-label="Вернуться на главную VLAD MOTION">
+          <img src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="Кошачий знак VLAD MOTION" />
           <span>VLAD KOCHENKOV<br />MOTION DESIGN</span>
         </a>
         <div className="case-header-meta"><span>CASE / 01</span><span>KRASNOYARSK / 2025</span></div>
-        <a className="case-back" href="/"><span>На главную</span><ArrowUpRight size={17} /></a>
+        <a className="case-back" href={homeUrl}><span>На главную</span><ArrowUpRight size={17} /></a>
       </header>
 
       <section className="case-hero" aria-labelledby="case-title">
@@ -71,10 +75,10 @@ export default function MatchCase() {
 
       <section className="source-section">
         <div className="source-copy"><p className="eyebrow">Original post / Motion This</p><h2>Смотреть<br />исходный <em>ролик.</em></h2><p>Полная 40-секундная версия и авторский рассказ о проекте опубликованы в канале «Моушенируй это».</p></div>
-        <a className="source-link" href="https://t.me/motion_this/348" target="_blank" rel="noreferrer"><img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /><span>Открыть пост<br />в Telegram</span><ArrowUpRight size={29} /></a>
+        <a className="source-link" href="https://t.me/motion_this/348" target="_blank" rel="noreferrer"><img src={asset("/manus-storage/vlad-cat-mark_98340d24.png")} alt="" /><span>Открыть пост<br />в Telegram</span><ArrowUpRight size={29} /></a>
       </section>
 
-      <footer className="case-footer"><a href="/">← VLAD MOTION</a><span>© 2026 / CASE 01</span><a href="mailto:vlad.515@gmail.com">vlad.515@gmail.com <ArrowUpRight size={15} /></a></footer>
+      <footer className="case-footer"><a href={homeUrl}>← VLAD MOTION</a><span>© 2026 / CASE 01</span><a href="mailto:vlad.515@gmail.com">vlad.515@gmail.com <ArrowUpRight size={15} /></a></footer>
     </main>
   );
 }
