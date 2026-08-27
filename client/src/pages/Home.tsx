@@ -140,6 +140,7 @@ export default function Home() {
           <iframe src="https://www.youtube-nocookie.com/embed/inF690u-h1s?rel=0&modestbranding=1" title="Vlad Kochenkov — Motion Designer Showreel 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
           <div className="showreel-caption"><span>VLAD KOCHENKOV / SHOWREEL 2025</span><span>00:57 / PLAY IN PLACE</span></div>
         </div>
+        <a className="showreel-case-link" href="/case/match-2-0"><span>FEATURED CASE / 01</span><strong>Совпадение / МЭТЧ 2.0</strong><ArrowUpRight size={20} /></a>
       </section>
 
       <section className="work-section" id="work" aria-labelledby="work-title">

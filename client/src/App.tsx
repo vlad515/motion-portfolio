@@ -9,11 +9,13 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import MatchCase from "./pages/MatchCase";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/case/match-2-0" component={MatchCase} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

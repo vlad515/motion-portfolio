@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Моушенируй это – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="Моушенируй это">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/pFVLVjsrPpFkI96-VWE44WJUiUDHd2JwvsvHYTsIkNAOvzP7oMEZfvXZgxKzSx19USu6cekwSlvrMelWrc4G-myzXoVYbBpChEFl8O2LvqZrtRxwJ96kyWGvB-b7-3CzrGU2QPBpVVgdqueKu_-5az9vSzgb5WFh5PL9u-v-g1dzc6Q_ImtwdNr79I74BtGJjqE8EK7YVwWCjOPfioWHQDVJhqWj8FbUAVDHlrfPbCi6iAmEwtRdLakAOOwTXrRfqGZ_C_QHTueUClzAW39X5CpOaRvc09HlVT_AGULlwv7uKGqsj1SaVf6g-a4se8a0ZWTCTKHQpczsYbhgBFlkvQ.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="Кейсы, моушн-приёмы и AI в реальной работе.
+
+WIP, инструменты, промпты и разборы без шума.
+
+Кот не любит статичность. Я тоже.
+
+Сотрудничество: @vlad515">
+
+<meta property="twitter:title" content="Моушенируй это">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/pFVLVjsrPpFkI96-VWE44WJUiUDHd2JwvsvHYTsIkNAOvzP7oMEZfvXZgxKzSx19USu6cekwSlvrMelWrc4G-myzXoVYbBpChEFl8O2LvqZrtRxwJ96kyWGvB-b7-3CzrGU2QPBpVVgdqueKu_-5az9vSzgb5WFh5PL9u-v-g1dzc6Q_ImtwdNr79I74BtGJjqE8EK7YVwWCjOPfioWHQDVJhqWj8FbUAVDHlrfPbCi6iAmEwtRdLakAOOwTXrRfqGZ_C_QHTueUClzAW39X5CpOaRvc09HlVT_AGULlwv7uKGqsj1SaVf6g-a4se8a0ZWTCTKHQpczsYbhgBFlkvQ.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=motion_this">
+
+<meta property="al:android:url" content="tg://resolve?domain=motion_this">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="Кейсы, моушн-приёмы и AI в реальной работе.
+
+WIP, инструменты, промпты и разборы без шума.
+
+Кот не любит статичность. Я тоже.
+
+Сотрудничество: @vlad515
+">
+
+    <link rel="prev" href="/s/motion_this?before=326">
+<link rel="canonical" href="/s/motion_this?before=351">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/motion_this">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/motion_this" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor4" data-content="Мэ"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">Моушенируй это</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/motion_this">@motion_this</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">244</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">198</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">75</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">65</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_description">Кейсы, моушн-приёмы и AI в реальной работе.<br/><br/>WIP, инструменты, промпты и разборы без шума.<br/><br/>Кот не любит статичность. Я тоже.<br/><br/>Сотрудничество: <a href="https://t.me/vlad515" target="_blank">@vlad515</a></div>
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=7343107acdf8696ec7_10651690256567481594">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=7343107acdf8696ec7_10651690256567481594">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/motion_this">
+        <i class="tgme_page_photo_image bgcolor4" data-content="Мэ"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">Моушенируй это</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">244 subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/motion_this">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/motion_this?before=326" class="tme_messages_more js-messages_more" data-before="326"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="motion_this/326" data-view="eyJjIjotMTc3NDc2NDk2OCwicCI6IjMyNmciLCJ0IjoxNzg3ODM2OTQ4LCJoIjoiNjZiNmE5ZDBkNzI4NWRiYTc4In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/motion_this"><i class="tgme_widget_message_user_photo bgcolor4" data-content="М"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/motion_this"><span dir="auto">Моушенируй это</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:131.788%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:597px">
+      <a class="tgme_widget_message_video_player grouped_media_wrap blured js-message_video_player" style="left:0px;top:0px;width:453px;height:266px;margin-right:0px;margin-bottom:2px;" data-ratio="1.8409090909091" href="https://t.me/motion_this/326?single">
+  <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/KtHayaB3FtxXKKazSCxzP3whkcOU-02jd0vjEjSGTxAdkYZLmzT1Ldw-Acv2oIDeGL2lXZBIeTLJ4s6srXTVMQ3LF7fcg_D6Ic7FAM2VUOhkC5dif0giZeh1aRjF2hapM-7Io63dErWjKA88BP-ggrYmnABvMFP-cCH0KU78SyE42UwD90AZVmoxmsx7hIm1-jyDiwm-M_gr7x-_VcVoNuxgy4oWENfwSi1kE1t0q4SqWojd7iFfL6W_IbClSqvPEKEImSlMDJwIJGYsRT6KzURi2s70-0ouQgiKFf0vvFHhTknc0f8c68sgtBTZYAAN4ljQT8UTQJpqS_-JSIM96A')"></i>
+  <div class="tgme_widget_message_video_wrap grouped_media js-message_video_wrap" style="top:0;bottom:0;left:-19px;right:-18px;">
+    <video src="https://cdn4.telesco.pe/file/9dfc958679.mp4?token=ThkvyIPU8Scvx723-YPxKLznT2bRZzO3TvSd0t4MtE6RXpuk_qLNZjW13c55ULHaWorxcCLqvNaWQOjVtD8lMfoAAwVrgaqSSZXv27HrWEfrPOU-RObs7CC-fFeQNX8K7hpHRf90zzWrNjzrD3ENwe52-HoGcVxSLDLUswG3sShAVbKV_VCX6kuTNFXgB1zCVBuZ--F2C7whNcVBVyXRVf79qbvSCzeE-1G20Ws1cLpZamARih8GsnUDs1hquwodF9GmsVf0LcPzSYYjTFBeOZoEeHqRs9EWPPeZFPIJO5B1-tl1c1GI0mLorZjb7_MV0SAvSFfkMO-QANT_VTzPwQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+  </div>
+  <div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:06</time>
+  <div class="message_media_not_supported_wrap">
+    <div class="message_media_not_supported">
+      <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+      <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+    </div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:268px;width:102px;height:102px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/CvXo9m3pEJ1gT-auDc3KJ2T9tQJLojP4BGJFK9ABQnbbyCcWr85pHyeIFRqXqvgmYx6oke2qhwHjrZo0quEpsrALwnhYhYsVxQ-ygl7Xmq_oVkc4pLtI2wYVc6qMQLB-AuV6g2Lli8t7lAeZJ5BLgxDbMh5tDqEUpkl9VqVpZQd_ucgw8j9IIvsY5orCDDFSSO9MfCCz1qThYbaBLlW5pM9aQPQwjZJDpvOw8x0pgZTv_EIWZv4nivngQceTIn9DLg4IeczBqbHhi_T-9WrnRL198GmVEz0_u0vZR6iLCYFwOph2U4n3OH8ZvLmV65Ei6nDgwLbUS2UmtufnyYgSfQ.jpg')" data-ratio="0.74625" href="https://t.me/motion_this/327?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:3px;right:4px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-18px;bottom:-17px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:104px;top:268px;width:173px;height:102px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/tawpnJ7fy4Ti6yvXQDkjesKZqQxERBh7TkQe42jVr2d8OcPUGEzFKUF5i16DquT8_N6yj640kRlRYovdCHB4-L0byNs38Am2nkr91TjcCaPbDu3rzRIjbvWw6DIXJwWa0CutLAjx0aP-vLsIQGSLpM_-HvnyVPHx-cybZ2UQSxcrp_xVMSJdv4gDmWBz8APAhB_7dPGjEaSXI2QKPo2dUdnK534cuUTpX57pGsVj695F2jb-mrt6dCAf5qxVc-2EJxroLwCJQmUyrzKV0tsWwkNnZL86X6rj5499CRSOJlq9CaAWOLzuVFEy05bTcs5uFB4iSZ18uWXKzLSvRCpYVQ.jpg')" data-ratio="1.7937219730942" href="https://t.me/motion_this/328?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:172px;bottom:173px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-5px;right:-5px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:279px;top:268px;width:174px;height:102px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/qG44vSBiT7bG_Ev7hJf54tK56wHfmdqcwMEkdSeGXwoWvzaD2UOiIOdg4CW8v_3XeGFobcjkKy5_xRQfygddV4NXnJNkEazxrrdktjaPuXjnVVy4BsuDBoiXtwhsXimhRTBMs3pWX9sj_XBq57yVYxXhxecSoyC66W-3isbsWIw1uFVMucZq1jwjAp6Eqq6ZPTIAI-xNmowr6oiQWoqR-mbmJXcIGdEogJXjgl7W_yiHcKI-iKlwKJ7vMcEQWA0hSJ8DvXzrTK5b5eph4an_BGdfH-v6Buq-lVmRe6PEHh4vj3GzTF2JgM2yK_QU-LEx7l2mbCI7muYGQ4zWZNaQUg.jpg')" data-ratio="1.7937219730942" href="https://t.me/motion_this/329?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:172px;bottom:173px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-5px;right:-4px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:372px;width:121px;height:121px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/ORjnUu07SZYRcqJU2ogxl4dWaaDCL6DgmJXT_vhoMf83DHH7tyTW003w_Z-M-1XU2ZwIlzpkhc4O8CqP_KRTNDpvnPfTHBPCpbals5fgmavuyUqU5jSfhkwaTb3O9imSA0OIuX00nMF6aq7t2fqyFwDga9mr6bX5s3McW8wtYr7ojuHoerw_5P21e1CZApPyQiBq0Hr8h8_A4-eD5JEP3926BHvPblVWoxej-59RMvlvDrvXsZBeQ7CT_XQA4EV4q89GHsdGFIdsxclWHOV1K6fqzheZ0fqnphKR9hcvlGh8koxhueGEkoGXjLskDltjzhgPuRePahQ655fqLY41_g.jpg')" data-ratio="0.5575" href="https://t.me/motion_this/330?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:60px;right:60px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-49px;bottom:-48px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:123px;top:372px;width:205px;height:121px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/NnMlyTHi6c2cuoL8t642f3ZKx1N3haFkYotHbi2bXh_gbUdlKAC0tEKZ4KE1vzm1lJtAWe8bhnSLlk0-bhBW2Zb5RHhgUF2LI7JVRtUE9PmxsvR82NyrLXDpJ_lpUmtnYrcbj1ZRyl8MPFo1YhaKcH8SLsLrtacYcwS53k8XYwwAjrXdRQ8s40RBZe8vV8xXr7jS3WY8dSwqzkY-1sUUg0cV8-1JYNViTq293fbYm46dUa817jCv9YQPwoqXu53QSSmSiYwwcvwOU7IwOUG_AxkvugSqKsGBTuqctbFr9cFoCiPmcPucqiqFlLUdPY7l229EjQofusB9wM9FgGkvrQ.jpg')" data-ratio="1.7937219730942" href="https://t.me/motion_this/331?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:172px;bottom:173px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-7px;right:-6px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:330px;top:372px;width:123px;height:121px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/iso18mAfAso0Dfa9sSepAzyEqqsUzqz7GlRlQWFFyXJf3m1L4pYjCIEVOXn89rauj2A8upAmgXFtNsYqMKLqWAnEIbQ5_h-YZW7JQsS7_po9YgQNRHux_Vx4Jg3ReKUtVg7Dui4LD3i3K2qsXqrIu_sbdm4fbNbOGgIF8mMJqRxuHjGRzFnAlWs3UelCaF3sMCBMz1WZLArPqoxh432deW7_1QLXInC3Efwlee7bQOVhfHTPaMxf6tfzAkaP5tYlpqg3mWD396e7eL39xDvoFosDYB2cQcnhE2oAlCMoRgzwx3bO0tfzJ1nZJjrIi3J8_d8S4Wp-n5nFkXFn3R9ocQ.jpg')" data-ratio="0.5575" href="https://t.me/motion_this/332?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:60px;right:60px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-50px;bottom:-50px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:495px;width:102px;height:102px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/mNCEopIT4omECfOSMyBlyqATBI0c8b31p3vIqMTQAvJD1HUUVmHPOzy626RCv-i6cPO5fQuNISts9XnT_z8KHqsOnIyCQbm35ubgekDHFiz1vTEy2L7cFcyxjGNdOgLpTtmMrianHiAI82JqI0q8mrlUq_u0CY0T9eWt_m--v8MbEcQVVhJGb75-plTY7AwjDF9Ut5YNt6Yg_JoWp-_VpRTrJC0A_7aj6NvH6NoVUdfbede2UsSY90c2d1o2Tvz5S4RzM33Qub4l275wjon98CZu0TGRDj-3L6JCnKgCpV7UGe91pfLHUnyhN1NrUWPwuhA_5y6G_8D5U5PZ0SJsIg.jpg')" data-ratio="0.5575" href="https://t.me/motion_this/333?single">
+  <div class="grouped_media_helper" style="top:0;bottom:0;left:60px;right:60px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-41px;bottom:-40px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:104px;top:495px;width:173px;height:102px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/I-hqTM9E-Z8JFkw8cgpqCJ6ysCWB5d5aTTLlktIhHhTOQ5qiYo1Q2w4vhZPtMUOGKdx_wZjrbn-H0eKv7a1UTKW__jBzP9lQe-wmuURmQBoSyGzgYtQxjvpCW91BR-eSThBoOTW9TBx7tYfQdVfbYcGKCJiCL0lyUIf8N39zSNEpBzMTPSFgdfIF_kh2ETsJKDL_aCzmCNr8QbctRtHBZB600ZHDSz_jkP_SnZjexKtY1f7Q65BtvoizC9f4yFHnp1zQMigVyl6HJUWJenxsFKoX6CAEqWS6VLOF4IiVmaSsSKgg7-P1mMEt2aX1Qq0yCmwJ9l5Ymoa5xq2ZJo2qvQ.jpg')" data-ratio="1.7937219730942" href="https://t.me/motion_this/334?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:172px;bottom:173px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-5px;right:-5px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:279px;top:495px;width:174px;height:102px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/reR1KHn8ltm9iCUhhtjjUPZzItpZPIigiofE4iDmUNhEQLHaUhzXvjft77mQphiZmVBYHzN1I-hNosfZrn8Ve5_pRyI5I_5qpx5DbfEyYvTRoWBmJO-1ImDBF0gPNMUlF7ZyWUkJcj1jMV8nu_Wie2XgUgHchWBPjfTf3Tu3h1hBJSwXwPe9LYrVd3W9Sk0YoWWFzDbaRVFYrn2z_Z2IYx77IiQYlOeNdO-cbrVcyngte68kraYFGc7Q-XBVjdampNvAmS0u8bGA2iVQj2_IRhw-flQ1f81KsGu_b2U7vknsLPAdFt3UTC-BU3TuMw0PVBElUn8iab0TBmZyMepNMQ.jpg')" data-ratio="1.7937219730942" href="https://t.me/motion_this/335?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:172px;bottom:173px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-5px;right:-4px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto">Когда прикол зашёл слишком далеко.<br/><br/>Всем доброго времени суток. <br/><br/>Не так давно в одном из малочисленных (да-да, тебе все верят, Владик) чатов проходил конкурс на лучшее лого для груминг-салона.<br/>Посмотрел на работы тех, кто уже выложил, и подумал: ну чёт совсем скучно, надо как-то привнести абсурда.<br/><br/>Так появился сначала нейминг &quot;Эй, пёс&quot;, а потом и весь визуальный стиль. И, как оказалось, иногда абсурд работает лучше, чем “как надо” — занял с ним первое место.<br/><br/>Все мокапы генерил в Nano Banana, анимацию делал в Grok.<br/>Считаю, что во времена нейронок использование стоковых уже &quot;прошлый век&quot;.<br/><br/>Интересно, как вам вообще такой подход: <br/>больше абсурда в дизайне или всё-таки &quot;по правилам&quot;? <br/><br/>Всех обнял <tg-emoji emoji-id="5388790256772331442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/326?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/326" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>24</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>14</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>11</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918E.png')"><b>👎</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8C9A.png')"><b>🌚</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8D93.png')"><b>🍓</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">232</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/motion_this/326"><time datetime="2026-04-20T16:08:01+00:00" class="time">16:08</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="motion_this/336" data-view="eyJjIjotMTc3NDc2NDk2OCwicCI6MzM2LCJ0IjoxNzg3ODM2OTQ4LCJoIjoiZjM2NjU2Zjg1OTk2NjE1YTBkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/motion_this"><i class="tgme_widget_message_user_photo bgcolor4" data-content="М"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/motion_this"><span dir="auto">Моушенируй это</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5440520312224158623 1266719846_460002207" href="https://t.me/motion_this/336" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/FPAqr_8UdvkRXNlf-uznWMur2zTcY6r0YKJyI9nyT2SJ8X1K3eFfBO2tPq7-O-ca-SZWxBS6NmBjBAqnU8ClsVu7lVOg6eOD2VgzBmNuoH_wJxLQ58AGGGMdmCjNvFsMs0KyUegcrb2bVq14HrweDtpf5NcRmQZQJ2wCNsiBXE_qnGAtnBucR_vl5ZTnHnyETyxYYRsUNz6h9d-qVqubWOlDjCLHgaHg3t2XKZzRGWS_8DTKWycRBYjhAFuCe8gx2QoeEbaD--qvM5ggGAg4fEO5byagVYge8FQobZb6f7qfkHPRshfn8K9UUNkqaL4-tlzlkEeED1YGr6j0B9DT0g.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Cavalry теперь полностью бесплатная — официально&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9A80.png')"><b>🚀</b></i><br/><br/>Доброго времени суток.<br/><br/>Canva продолжает собирать свой мини-Adobe.<br/>Сначала <a href="https://www.affinity.studio/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Affinity</a>, теперь — <a href="https://cavalry.studio/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Cavalry</a><br/><br/>Мы с вами уже как то <a href="https://t.me/motion_this/308" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">поднимали тему</a> Cavalry на нашем канале, она была частично бесплатная, но были ограничения на pro функции.<br/><br/><tg-emoji emoji-id="5436113877181941026"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D93.png')"><b>❓</b></i></tg-emoji> Что это вообще такое<br/>Cavalry — это инструмент для 2D анимации, который сильно отличается от привычного After Effects.<br/>Если коротко: Cavalry — это Houdini в мире 2D<br/><br/><tg-emoji emoji-id="5278747228939236605"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA494.png')"><b>🤔</b></i></tg-emoji> Зачем она нужна, если есть AE?<br/>То, что в Афтере делается через костыли, экспрешны или платные плагины, в Cavalry собирается за пару мин<br/><br/><tg-emoji emoji-id="5463154755054349837"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i></tg-emoji> Что теперь доступно бесплатно (самое жирное):<br/><br/>1. Рендер без ограничений. Забываем про лимит Full HD. Теперь хоть 4K, хоть 8K, любой формат.<br/>2. Forge Dynamics. Полноценный физический движок (столкновения, гравитация). По сути, бесплатный встроенный аналог Newton.<br/>3. Lottie Export. Прямой экспорт в .json для веба и мобайла.<br/>4. Data Connector &amp; JS API. Привязка анимации к CSV/Google-таблицам и написание своих скриптов.<br/>5. Advanced Text. Мощнейшая работа с глифами и текстом, которая Афтеру и не снилась.<br/><br/><tg-emoji emoji-id="5447644880824181073"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29AA0.png')"><b>⚠️</b></i></tg-emoji> Где Cavalry пока НЕ заменит AE:<br/>1. Композитинг: Инструментов для кеинга и трекинга почти нет. <tg-spoiler>(Спойлер: для этого есть другой бесплатный софт, расскажу в следующем посте)</tg-spoiler>.<br/>2. Экосистема: В AE тысячи плагинов и готовых скриптов под любую задачу.<br/>3. Персонажка: Риггинг в Duik или RubberHose пока ощутимо гибче.<br/><br/><tg-emoji emoji-id="5411369574157286161"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9396.png')"><b>📖</b></i></tg-emoji> Если хотите изучить:<br/>— <a href="https://scenery.io/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Scenery </a> — насмотренность и разбор чужих проектов.<br/>— <a href="https://www.youtube.com/@cavalryapp/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Официальный Youtube канал</a> — база от разработчиков.<br/>— <a href="https://www.youtube.com/@FirstKeyframe" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">First Keyframe</a> / <a href="https://www.youtube.com/@heyalisamotion" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Heyalisa Motion</a> — крутые туториалы.<br/>— <a href="https://www.youtube.com/watch?v=sr6Xzy8-eUY&amp;amp;pp=ygUcY2F2YWxyeSDQstC40LTQtdC-0YHQvNCw0LnQuw%3D%3D" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">Стрим от Videosmile</a> — обзор базы за пару часов<br/><br/><tg-emoji emoji-id="5274099962655816924"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29D97.png')"><b>❗️</b></i></tg-emoji> Вывод:<br/>Cavalry — это не &quot;убийца&quot; After Effects, а мощное дополнение в твой пайплайн.<br/>Пробовать однозначно стоит.<br/><br/>Что думаете? Процедурщина — это слишком сложно? Пишите в комментариях <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/>И да, надеюсь, вы заметили новую обложку для поста. Как вам такой стиль?<br/><br/>Всех обнял<tg-emoji emoji-id="5388790256772331442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/336" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction tgme_reaction_paid"><i class="icon icon-telegram-stars"></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>15</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">173</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/motion_this/336"><time datetime="2026-04-27T17:00:44+00:00" class="time">17:00</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="motion_this/337" data-view="eyJjIjotMTc3NDc2NDk2OCwicCI6MzM3LCJ0IjoxNzg3ODM2OTQ4LCJoIjoiNGQwNTIwYzRjOTkxNDJhMzk2In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/motion_this"><i class="tgme_widget_message_user_photo bgcolor4" data-content="М"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/motion_this"><span dir="auto">Моушенируй это</span></a></div>
+
+
+<a class="tgme_widget_message_photo_wrap 5440520548447360908 1266719901_460003212" href="https://t.me/motion_this/337" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/hyAFxZB0oZk5vE5nniumqsN-DW4x7mzf4G9D4MvKi5ckPNaBLuyp9zZBjF8MTYRJxf_H-kU2fOMy1-ck3XQjYoITF0dpeYz92J0T9Jt2bfzbO7UmxaP8My4ZrcrWQxHdN8kPQwhYuZ_Ix5xBtpDV6nRaGIeijKLsGdM3gzrkLLrdw6Yl1TDfxJMtIcUFMmXXTl-Fp-dswk31bNzb7XkVFrXR-vRrlr2m7KRVmeYP8IK4bnWS1NHg6Z3hQEcHD9RjUACwz8fr2MfBJnVN-DPkoXQfmeck41Zu4Y4YhAQZndc3O-zznUPCH24R1g75JjNqLhk99RpertswMOTlu_WMDg.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:100%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">Maxon Autograph: еще одна альтернатива After Effects.<br/><br/>Доброго времени суток.<br/><br/>Во <a href="https://t.me/motion_this/336" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">вчерашнем посте</a> был спойлер — есть ещё один инструмент, который можно рассматривать как альтернативу After Effects.<br/>И это Autograph от Maxon.<br/><br/>Да, тех самых, кто делает Cinema 4D.<br/><br/>Что это вообще такое???<br/><br/>Maxon выпустили бесплатную программу для 2D/3D моушена и VFX.<br/><br/>Установить можно напрямую через Maxon App или скачав с <a href="https://www.maxon.net/en/autograph" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">сайта</a> Maxon.<br/><br/>На Reddit уже пишут, что<br/>“90% задач After Effects он закрывает спокойно”<br/><br/>Что внутри<br/>— шейпы и trim path<br/>— анимация текста<br/>— работа с 3D<br/>— цветокор<br/>— трекинг<br/>— кеинг<br/><br/>После After Effects ощущается вроде знакомо, но к интерфейсу и логике надо привыкать.<br/><br/>Из интересного — поддержка пакетов Red Giant, но требуется лицензия, хотя другие пути установки я не пробовал.<br/><br/>Минусы (пока)<br/>— нет риггинга<br/>(привет Duik, ты всё ещё нужен)<br/>— мало туториалов<br/>(по сути только <a href="https://youtube.com/playlist?list=PLUWySMuyy_cGsb2D49NwdU80Z_duUeW0j&amp;amp;si=KLUHVABex9Moq81R" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">официальный YouTube</a> и документация)<br/><br/>В комментарии закинул небольшой тест:<br/>— видео: Grok Video<br/>— постер и ТВ: ChatGPT<br/>— в Autograph:<br/>трекинг, цветокор, film grain, lens distortion и кеинг<br/><br/>Да, в Autograph что-то привычное из After Effects будет не хватать, но я не все успел потестить.<br/>С другой стороны, это полностью бесплатный софт, и ему стоит дать шанс. <br/><br/>Если они нормально прокачают интеграцию с Cinema 4D — часть аудитории Adobe точно начнёт смотреть в их сторону<br/><br/>Что думаете, стоит пробовать Autograph в работе или остаёмся на нашем любимом After Effects?<br/><br/>Спасибо, что читаете. Дальше — больше.</div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">180</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/motion_this/337"><time datetime="2026-04-28T18:44:11+00:00" class="time">18:44</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="motion_this/338" data-view="eyJjIjotMTc3NDc2NDk2OCwicCI6IjMzOGciLCJ0IjoxNzg3ODM2OTQ4LCJoIjoiMDdmNWQzNTY5ZjAxMmNmMjQ1In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/motion_this"><i class="tgme_widget_message_user_photo bgcolor4" data-content="М"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/motion_this"><span dir="auto">Моушенируй это</span></a></div>
+
+
+<div class="media_supported_cont"><div class="tgme_widget_message_one_media js-message_media"><div class="media_supported_cont"><div class="tgme_widget_message_grouped_wrap js-message_grouped_wrap" data-margin-w="2" data-margin-h="2" style="width:453px;">
+  <div class="tgme_widget_message_grouped js-message_grouped" style="padding-top:133.113%">
+    <div class="tgme_widget_message_grouped_layer js-message_grouped_layer" style="width:453px;height:603px">
+      <a class="tgme_widget_message_video_player grouped_media_wrap blured js-message_video_player" style="left:0px;top:0px;width:453px;height:266px;margin-right:0px;margin-bottom:2px;" data-ratio="1.8181818181818" href="https://t.me/motion_this/338?single">
+  <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/In93SIiYVCH-E68yhXVJb0VGvCfI0rCBZxn1K9iP5xU7BkQxhjvgYNMzj3zQpMq29VpSx5do6bi1Qf39juUC4AOs6bsU0z7gguLcY4aOlCeYiWl79K5R2WjDCtPzyb37s6et7jCiwC8vEFmNBVtUiqzzn1gDptEOJkAPs5ijtJ1U4vakFfyVFcBbbCVRFTbmkkTZhJ3ZX1a5i6Qh26VseIo-TEJogmAwh2q4R0xHY9Oi6DQoyV_jzDeKtxKQgFaHYMMZMTYGiMcuKas6AxZD-k9meqOc0so15nkBHmeydpjnnvt1rLLEW8hFV49F6m11GqGIv15IPJ93oxp7sontwQ')"></i>
+  <div class="tgme_widget_message_video_wrap grouped_media js-message_video_wrap" style="top:0;bottom:0;left:-16px;right:-15px;">
+    <video src="https://cdn4.telesco.pe/file/29733e013c.mp4?token=VGTJ7HX-oCYJ-jIxVafrc2ogts18xGUMcQZJB5_iY8Md79cpOQtz5ewzuoEQbJNsEVWrTlDK14DqNWgDZpnC6mJ8roHm36h_cDaOA_E52FNS2hLsCAj4ea91nxKBPugrkT_w6aSzBId4FQUHKEeDLrJ2SgHOED8TejsLY7VrDuD1zmICxwvgTlLzj5HLJ0oxOlmokeh6SknhIGzjJn93tOsAlNdR5_3qgLDYO9CnqTxdMk0Jy4t_AKiFqjJpHOLba3ZfpXK8wEnw77qUpm3wgn1RcMeFSPtynCwtpMhZ6E0cZ-5bNy1RHa2piuiSX_KRE1-UO0fCo3co29kKfjmhGqjUS9_EyrdGhCSdbwZtXRIQ8TCiqsQ1fer0u5rgQRHdp-g6tJaBqliBTQih1C5xi7J3SzyhmOuwUtJT9LPxOIXdh1S5VXXNRCx0MEUIyCH8L38Ihd8ZTP_QfF1eKP5LBakHBIVrYkKESOATHN7pu05xw1aCQrPjr1nnfPLWkKxN1SfK0Yx4bZTSpz362tknGMrIrAPEoUAgfVgk73ReZLTsWYyttCwnZuovFBpZUay-j77OOTk0vXwFK5stymknXIIRcKCP5GW_Jt8htDYOAhMuMkXNTWruG5lJhuIALRM6ZVRqNALSW_5_lVTYJ_QrQasj4LJdBb0zCx-B1Ha49_U" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+  </div>
+  <div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:10</time>
+  <div class="message_media_not_supported_wrap">
+    <div class="message_media_not_supported">
+      <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+      <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+    </div>
+  </div>
+</a><a class="tgme_widget_message_video_player grouped_media_wrap blured js-message_video_player" style="left:0px;top:268px;width:149px;height:88px;margin-right:2px;margin-bottom:2px;" data-ratio="1.8181818181818" href="https://t.me/motion_this/339?single">
+  <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/CoODcgN6FXpDD5sg2QDADM_KfMZYQxVLKpL8S1y6OS6KBGRAkBTMMceCxyEWQo6JEg7Rf6OTzVGvQt_mL-Mqy9CLU-XfSFsXn8Icjf_dpBF-2aEmbnnITeas2HuIYL4kC2eW0XmtqfEtk4PWiaC7PlHEIaZYBIl5dP9beCcBVla0hh06ckr_TJ7i_wLP-Z8T-wiZef-kJDwQpAb581mnNfOuNIw-LU1lqnckZ0NDDP0tDBo4UrGh1vKMIZT1R20E7NQ4e47bZ8zGHzZwH-ayQ8gNcULDxr00jPWxJuRR43-FHswr67LVSCXcEdhxiwpqPxYT0Sxm76hFYgYFErssgg')"></i>
+  <div class="tgme_widget_message_video_wrap grouped_media js-message_video_wrap" style="top:0;bottom:0;left:-6px;right:-5px;">
+    <video src="https://cdn4.telesco.pe/file/e3b5481082.mp4?token=dxTTj9es8kGpBqcrObzMaT2kIXjuTbuRZvDkyFGAPXDzqDT5MvNPCGM4cLBV7lFfJJgKWhl8NvZQ0Y23kz2vagZXi77lsL-_bf_f4s1O7-XZZmYYWZln8GKRM3GGYP8B86epnVcML8IhglshmUu56fc2IrUOSpI9KXOOMQdOvnXcupzdx_yTGYLBE1J-uoWUm-K1MWHg4COXcJuzbQnM2qooB2uCtivSX95_LmP4JsMzYInGXPnXwOI6S9UQV-xmJUrIQYeKG_9Kb-CXDyzu3WHv4uI0gv5f6vpRG4s6KEkkdDmN7QzjYSP9hJHWWYJIfjJoVZJ0AG2RNVCWid4zUQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+  </div>
+  <div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:10</time>
+  <div class="message_media_not_supported_wrap">
+    <div class="message_media_not_supported">
+      <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+      <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+    </div>
+  </div>
+</a><a class="tgme_widget_message_video_player grouped_media_wrap blured js-message_video_player" style="left:151px;top:268px;width:149px;height:88px;margin-right:2px;margin-bottom:2px;" data-ratio="1.8181818181818" href="https://t.me/motion_this/340?single">
+  <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/Z-fbfx5Maz-UJD8vEE0yhpEiXcSi5ErGLlGNinuiO8WEEfX7RiH8oklwOfLDJyAW6ERyVI47Sg7swSL7ax-24eQHpogKYcoK557Tcc_zI1Q0-tjw0tZeJi2_cLxJbFvGMh8_EmzUPMnc3ZDEb7MaghzQ43DEyoIdUDVxOBpRuDwSpbK2t89UiRohTEYFCqBeVkEae73pTwk4KbQvFyNsBQdjtKlvtJeYsSwjm_Lj00hmBvvUMuyHOgw2VBNuN_2etBTVquzW4k2GIx_PBwNafMyeC4nehSQ_DlYkyn-riT2Py_KJxUhsxRvusKk14Jo65LW6ygoZmo-Z-4sa4DVdMg')"></i>
+  <div class="tgme_widget_message_video_wrap grouped_media js-message_video_wrap" style="top:0;bottom:0;left:-6px;right:-5px;">
+    <video src="https://cdn4.telesco.pe/file/993f488d04.mp4?token=smde9vvwSNrb4GXj2060SHc0GtzXQIZdP5qC5BVcqr4wHCy2oTDVxL4xaMef_vIpvLzswES128Ie8KqvO0IFCFvvlNFkF_0IPJzaFRLc6NsTkxHT1pcsSlG0cIyIUm3X3-U7u2CuQYRgSu-KVkHkLRgmMEroSj9XmYiby84oA_c4f6Koq-3wFdtpvCOFZnrvL7WnLE4XME5IlMYDmxefDvGWU4HwJJ3b8ckdwzcSMnbwdkVDw_Mz5udXESQZ8XN23pSzz8ZkasN1HslRSWVRa7t3aUl0ytgAy1yc1w6Bh36O7UfhnUAlqe7DUrs9LDSaNuRDxs0y8WixwfgOBFSZ3g" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+  </div>
+  <div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:10</time>
+  <div class="message_media_not_supported_wrap">
+    <div class="message_media_not_supported">
+      <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+      <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+    </div>
+  </div>
+</a><a class="tgme_widget_message_video_player grouped_media_wrap blured js-message_video_player" style="left:302px;top:268px;width:151px;height:88px;margin-right:0px;margin-bottom:2px;" data-ratio="1.8181818181818" href="https://t.me/motion_this/341?single">
+  <i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/ii9OJNPgciJSulymTtTQnTF_OMhWSOwAe_s8kNOgmyebKcRq5ncsRpyewqdrAMZpyRKHI6Qa2QZPr25LyQ_olpyIPzGgEVDiBK21kJZ943oETVBBeSJclFxw2SzkAgnIEytKMH-rt7njgy2e6kuX25GZ9owxfhutpqR9mjNEZMc-zo1wRnYrPZf-A5FJbrJKrho_QgpPuKjvBa0Nxz4A7Erg5KM_8rUpGchS2SfumRcVrEaICFsCmbWzD2-Bl5kDXbdxiii80FpJ0noiKy90iNvj6vX4XY2SE3QP766vY97tpUlmvc3jwL-xgQYzXyfRS3oIs5X4W64bhY8AdlAFOg')"></i>
+  <div class="tgme_widget_message_video_wrap grouped_media js-message_video_wrap" style="top:0;bottom:0;left:-5px;right:-4px;">
+    <video src="https://cdn4.telesco.pe/file/17fdb66d1e.mp4?token=KV0ye1601Xls8qH8tfpBHNXzGPZ8_zs2IX4Edf3bLeGvbnNqQFuRy8NG8T-PhJdvdjaMm1Jf2XAmc1BvGLmi2lBo7tAuC5IN2B_mNk7UHzTkrLqrr6WRarpYvEV2umlggu0-Pr3mywAldR8O1XXGIiVCYFvPLwSTSZPrjXiYNrJIEvRt5eMZQ2qv2K2ucRcIA6Jz1FZmj4z2c-lvYguwjjKHkRLiSA68sfeiH0iKH-ntpZah_FmEo799uB_smFIv-1w8fyF1EyUbUxDz-djIeHeSveVe1Y-EJJKo02fPOvEsUE2KE9cql7-Mz_XoVZOpX0pawJAWXtx9VLY5xQJPjQ" class="tgme_widget_message_video js-message_video" width="100%" height="100%"></video>
+  </div>
+  <div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:10</time>
+  <div class="message_media_not_supported_wrap">
+    <div class="message_media_not_supported">
+      <div class="message_media_not_supported_label">This media is not supported in your browser</div>
+      <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+    </div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:358px;width:205px;height:121px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/Bexu3o9vM6Ni4dNKTyEsLUUmip_LmVKpV1w4_sLSjmaMwWwEUU7XyB5iuRtPvCn2x4cR-68h7NVSguuwuXAGqTyfmrbe1zuxwd4SU2lAM_v0S4YkpUF6DNdAeM_LSGi2ndllEH5vgcHCVmWCD-_c42OhfuqpgjY79vfO5P-HNulOVIlp-GQQ0c5j1owMbwzTEZnc2aMycKbJXv9CB-tTO7SrjcxBySUvDLLtO6fZ0x1kvWO0JJ1M-aX35I-8WtB5ucYR6LU1vEBm2WPhtFop7ZmfMXZpXoF5lxeMywqGlunBx5Is5ctW4O9OwJoWbaUgPF9Vh170v7RhLWB_zHQGtA.jpg')" data-ratio="1.7897091722595" href="https://t.me/motion_this/342?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:175px;bottom:175px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-6px;right:-6px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:207px;top:358px;width:121px;height:121px;margin-right:2px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/uIgddYu6R48zlzyWNk-1510oYIflyjUiZVo_3_JY2JpyYtp-4U1eLq8gzVhH6h3fhMvIz8COwc5wrscBqli2qGg7OaGDH1rzezGpTJydxMlh7fctaZGj4HScnW06O--96JrFNVgPBLQOWZW_1qQWlBphJ5dEdnpq1nPrrTYzstqgC1PSCFduz6ZEmqsOElLbCMphu_YUroyyuvX5jfQxaONP89DC77OGgAWBLVOUIdnifESmFyXWFKGIwkmisnenTd1HvdgzHXvRjKwGHhDaUh2afbgCJVHeoAwts5eqP7hOUACrjLCdRtepXbDyw1H2ZZOiEKufeXSkWsTXC_AOaA.jpg')" data-ratio="0.8" href="https://t.me/motion_this/343?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:18px;bottom:19px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-16px;bottom:-15px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:330px;top:358px;width:123px;height:121px;margin-right:0px;margin-bottom:2px;background-image:url('https://cdn4.telesco.pe/file/Fu2QUP7kogQnSVFLxgEAVxx4_H2ZcUpnK7P2nIYauS8Wpf1bsr-2Z6AzXvolwoBMMVsU1fZGxl_UQ-nDToOGaWyGuy3kGvoFzt5HiaA9TCUu9XgeCMD_wy_9WZAs3qrwNWLtLjoLFmBSRnMylbiPXEbKtP_ZM_JAT_9ODI72RhrmZQoNNbnTSRX6EDeHXuEPDx6PmYJx_fCcp-G2Tfh638_pKY3daXAMw6uuNPtcrbxwvv0Ql4D-TLB1x6-2ugBhzQB_ABmZ9eKlPv6q6-waiBJ1AV7uMEtblFxeN0BwJtsZvZYejhcJank0VTKQcsxXyRgOgjqIC-cGcJhjXTdp7w.jpg')" data-ratio="0.8" href="https://t.me/motion_this/344?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:18px;bottom:19px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-17px;bottom:-16px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:0px;top:481px;width:207px;height:122px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/ImcX_UJRwgFuGC3QizKK1prHgkMm26OKWS9hNyW937F1OnsiYezRWx18OhTIf4ePVQ4q1ss-CgWbM1QX1qLDPZLmCvq5h_f_U9LF8vyv1HupnvBfqLKAEz05OIrIpbm19xuJtMJlexHXfTyf5z3ppG4_qfh28poXgwyEoHlkKcYt64ZlCnn_skgRtjMnxd56uLfooejXWy8nkzGSayuHwibSeD9fsv85RrWkrEBCqu1qPV820mnTwVO3MnVB75WxyP2EKRRy2L0K7tRWD8oY7sMW-6pgoh3eA3VpxWz1j-xvk5Opxl1W_ii1A3yhZePI2qVeCUHaZfPEOZiLrV9nXg.jpg')" data-ratio="1.7897091722595" href="https://t.me/motion_this/345?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:175px;bottom:175px;">
+    <div class="tgme_widget_message_photo grouped_media" style="top:0;bottom:0;left:-6px;right:-6px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:209px;top:481px;width:122px;height:122px;margin-right:2px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/P6DIA16IoHiSrvSkI87FG8TjW8-0LK3vGoDX49vxrip74qdPpETyO9E1VOnZ-iyrVrO6i09CdVzhdEHiYP-al2-0lM0grhBYBwLi0aal8daK5zHFtDODZBxlKM8g7BlupOmo9AhLJ91xNmyS0cXBbMJz6v3yQ5laZ1XosPYsluEgllIeiIr0k2yPy9jIXyXerNk7JUHvrrgfidAGDpEbZ2cw60-KVFNq-RrHPIVf57WfVZx8m6-KrC7DWZ31m-2HGqXZCwTGhEy2ZRrZzfgb6zjXaetJkAthmJ-ns941aMexwCCg_I2S3182v0yFcyFZfsNyBmg0fGgoyknwLuM_rg.jpg')" data-ratio="0.8" href="https://t.me/motion_this/346?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:18px;bottom:19px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-16px;bottom:-15px;"></div>
+  </div>
+</a><a class="tgme_widget_message_photo_wrap grouped_media_wrap blured js-message_photo" style="left:333px;top:481px;width:120px;height:122px;margin-right:0px;margin-bottom:0px;background-image:url('https://cdn4.telesco.pe/file/KKakLZx94Qzd-mTrvY5FXV8ioYxl5NG1g5NF5kWtmuDFc9BrPQTK-XKu9T_vQNDT5ShYguRLaskSjNIu686UqjBBHcEj2U09y7frYdpcXKO2ylvNr7HZ76gJEI6HfYH25O76FiDgxCu8O5HVHlRrWlx5NNqVgIhUuxXbboy_OQRmsxuvm1CtNe_pKk4TBfMoc7GESSRF1Ia6yp3rmFn-_0JXZOdvr5zAfu5qZitooSZx1oJqccxPHNvuem4TlUlXOiJsU9PR0g5TVIAI_YvGpzY9Sq4hhwoo2U4UlhgVpbuhNZguKkSa9umIxCBwCYyOfctt1iSHXcbkRuE_cbiKew.jpg')" data-ratio="0.8" href="https://t.me/motion_this/347?single">
+  <div class="grouped_media_helper" style="left:0;right:0;top:18px;bottom:19px;">
+    <div class="tgme_widget_message_photo grouped_media" style="left:0;right:0;top:-14px;bottom:-14px;"></div>
+  </div>
+</a>
+    </div>
+  </div>
+</div><div class="tgme_widget_message_text js-message_text" dir="auto">Среда, мои чуваки&#33; <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F90B8.png')"><b>🐸</b></i><br/><br/>Доброго времени суток.<br/>Да, немного припозднился с постом. Перебирал десятки вариантов, пока не понял, что сегодня душа просит кино и телевидения.<br/><br/>Получился такой &quot;жабий сет&quot; в духе старых новостных студий 50-х, нуарных детективов и лампового ретро-футуризма. <br/><br/>Всё сделано в Midjourney v8.1 aplha<br/><br/>Какой вайб сегодня ваш? Пишите в комментах. <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F9187.png')"><b>👇</b></i><br/><br/>Всех обнял<tg-emoji emoji-id="5388790256772331442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><br/><br/>P.S. Если вдруг нужен апскейл пишите как будет время вышлю)<br/><br/><a href="?q=%23dailyAI">#dailyAI</a> <a href="?q=%23midjourney">#midjourney</a> <a href="?q=%23%D0%B6%D0%B0%D0%B1%D1%8C%D1%8F%D1%81%D1%80%D0%B5%D0%B4%D0%B0">#жабьясреда</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/338?single" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/338" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>6</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4E2808DF09F94A5.png')"><b>❤‍🔥</b></i>2</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">218</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/motion_this/338"><time datetime="2026-04-29T20:28:08+00:00" class="time">20:28</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="motion_this/348" data-view="eyJjIjotMTc3NDc2NDk2OCwicCI6MzQ4LCJ0IjoxNzg3ODM2OTQ4LCJoIjoiYmMyNmUxNjFiMTVhYTM4MWJkIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/motion_this"><i class="tgme_widget_message_user_photo bgcolor4" data-content="М"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/motion_this"><span dir="auto">Моушенируй это</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player not_supported js-message_video_player" href="https://t.me/motion_this/348"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/YVRGrzSw2UoHHpIOB91OdQPbKwo9TkUK3WuANNAFJfLYznjcQtv5IoBHPkJYeUe4xV_B2IdIRfQSIdOagjczDBu6bOvfnpvf8fkA69JDY39i4VdAIOl6QRXJIrA9tYpdoj8mAch4iTjx-abXTcv-06LFNNWYqpEBPdkvxvr_oCW_uzIpldf-HSp-XpLITPw0T4tVGCe9BNQYoWQ0T_OrrSxf475Gfy3zg4MtylWFf3jGV9_4ExQUHnAIuoZ9X6m7J0h9NHZxeWjMpEc7OXZr-O7NKdql2YD1_Q-R2kn_-y_e0YaP0y3PoiMwmt2SBrkCEpHMqkDOgsDw-J5R_ZC4wQ')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:1080px;padding-top:133.33333333333%">
+  
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:40</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Media is too big</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Как звучит и выглядит современное искусство. Оформление для конференции «Совпадение / МЭТЧ 2.0»</b><br/><br/>Конференция в Красноярске уже прошла, экраны выключены, так что со спокойной совестью делюсь кейсом. Мне посчастливилось собирать видео-продакшен для этого ивента.<br/><br/>Тема события — «Дизайн сквозь призму современного искусства», поэтому задача стояла со звёздочкой: нужно было уйти от банальных корпоративных заставок и сделать визуал одновременно минималистичным, стильным и гипнотизирующим зал.<br/><br/>Работы было много, контент адаптировался вообще под все возможные носители. <br/><b>В итоге подготовил пачку ресайзов:</b><br/>1. Вертикальный формат 9:16 для промо в соцсетях и на мобилках.<br/>2. Классический горизонтальный 16:9.<br/>3. Версия для главных экранов на самой площадке мероприятия.<br/>4. Огромный формат 6х3 для городских digital-билбордов.<br/>5. И ресайз 9,5х6,5 для наружки на экранах города.<br/><br/><b>Что в итоге задизайнил:</b><br/>1. <b>Центральный арт-объект:</b> В основу легла сложная, медитативная 3D-абстракция. Она плавно трансформируется, меняет геометрию и буквально приковывает взгляд. Это наше визуальное воплощение того, как искусство проникает в дизайн.<br/>2. <b>Атмосфера и свет:</b> Никаких грязных цветов — только глубокие тёмные пространства, мягкие градиенты и контрастная, выверенная типографика. На огромных светодиодных экранах это выглядело монументально.<br/>3. <b>Саунд-дизайн:</b> Картинка без звука не работает, поэтому под ролик собрали глубокий, обволакивающий эмбиент. Он с первых секунд настраивал зал на нужную волну и держал фокус зрителей.<br/><br/>Билеты на конфу, кстати, разлетались через <a href="https://%D1%81%D0%BE%D0%B2%D0%BF%D0%B0%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%D1%8D%D1%82%D1%87.%D1%80%D1%84/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">https://совпадениемэтч.рф/</a> (уже неактуально, но пусть ссылка останется для истории).<br/><br/>Заценивайте результат в видео&#33; Как вам такой визуальный код для профильных ивентов? Пишите в комменты <tg-emoji emoji-id="5458382591121964689"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C8D.png')"><b>✍️</b></i></tg-emoji><br/>Там же ждёт бонус <tg-emoji emoji-id="5258073279305889554"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F988E.png')"><b>😎</b></i></tg-emoji><br/><br/>Всех обнял <tg-emoji emoji-id="5388790256772331442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><br/><br/><a href="?q=%23motionthismedia">#motionthismedia</a> <a href="?q=%23motiondesign">#motiondesign</a> <a href="?q=%23aftereffects">#aftereffects</a> <a href="?q=%23%D0%9C%D1%8D%D1%82%D1%87">#Мэтч</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/348" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>13</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>7</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>3</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">201</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/motion_this/348"><time datetime="2026-05-24T11:25:24+00:00" class="time">11:25</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="motion_this/349" data-view="eyJjIjotMTc3NDc2NDk2OCwicCI6MzQ5LCJ0IjoxNzg3ODM2OTQ4LCJoIjoiODhiZTk2Y2U5MjcyMDg4YjkzIn0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/motion_this"><i class="tgme_widget_message_user_photo bgcolor4" data-content="М"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/motion_this"><span dir="auto">Моушенируй это</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap blured 5256068861478508384 1223773896_460003168" href="https://t.me/motion_this/349" style="width:370px;background-image:url('https://cdn4.telesco.pe/file/au6PzDE7W2k45DO5vqar-vzdqx3gwnWZPo3nniNwUOzkZRSzbE-XedgD70sQa8OjpDXk-Er6AQNU721hUCJu8XiXf_7Ff4Q0DixciN8HsMn7XgCB4KDdA_8NS5ztMdSJ9eiM_jINUedofGOOaSGHCNNxgtJj15tCIJrReD-ucyW3MUEbdUh02ql-KW36pLq1JryqGOaDs3iR4MMWHLr_jf9w5Jkoz0byKGDozWmxidF3kjGTkaSxJIDn44e1qIzCZtQg0oM0VJ7VJBuuRkq95ceD9UgTZ9CiwPvKwNjpq35mi-4MFUsOXS9TSg_r7D5MvpcCnokGR4qeZOFRejpXdg.jpg')">
+  <div class="tgme_widget_message_photo" style="width:61.666666666667%;padding-top:133.33333333333%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto">С Днём Рождения меня.<br/><br/>Всем доброго времени суток.<br/><br/>И да сегодня пока ещё мой день рождение.<br/>Мне сегодня 33 года, и я их встретил в Казани.<br/><br/>Подробности позже, но этот год уже лучше чем прошлые.<br/><br/>Всех обнял<tg-emoji emoji-id="5388790256772331442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/349" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>23</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')"><b>🎉</b></i>9</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA5B0.png')"><b>🥰</b></i>3</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>1</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09FA497.png')"><b>🤗</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">170</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/motion_this/349"><time datetime="2026-06-01T20:59:17+00:00" class="time">20:59</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="motion_this/350" data-view="eyJjIjotMTc3NDc2NDk2OCwicCI6MzUwLCJ0IjoxNzg3ODM2OTQ4LCJoIjoiOTFlMDE1MGI2ODg2MTRiZmQ0In0">
+  <div class="tgme_widget_message_user"><a href="https://t.me/motion_this"><i class="tgme_widget_message_user_photo bgcolor4" data-content="М"><img src="https://cdn4.telesco.pe/file/J0AtxjGi1GvS0A30juti1MweHGFAa2Uqb0bpDrQh3GImPSU-QubbIY8T63bTJScYJ_XzAYFq7OOcIEeyq7bqcR4_NGVwlrLqHSzDSYUrfmmG3oM4Enuy8nC0m2aStbIy49eyU7HpSYfVj63U1NnLx80eWlolxezuRK7wrwDzw_6cPR-JjBKN4UftGZsEm9p6HV2ISmgzo9esybGM5qnwW8AxaA3ANzcrQdmVzGf52GSfcpGVEBfTm3MkVR4TIcHzGmrBxylYcXn11VB6Odg3Qv2epx-4XF00bxkLQdh9IuD2qcrwB1z9Ic6LyLSGznUsxRHH6nSxsJwyCvvyMGgJ0w.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/motion_this"><span dir="auto">Моушенируй это</span></a></div>
+
+
+<div class="media_supported_cont"><a class="tgme_widget_message_video_player not_supported js-message_video_player" href="https://t.me/motion_this/350"><i class="tgme_widget_message_video_thumb" style="background-image:url('https://cdn4.telesco.pe/file/VJbvBmm-jfbzK8x896ULqgHKVUhK5YAOlOeMi1Yla-yhuhZBBoBAwlvX6Y1fK9SisBnW8ejpjSl5gIHif7SfC47lEPOFOSvuqMdghvVaNKmrROg8DnL7t2sSByYnL40NTiKlCeSMgd41icmsdg1hQYU4iVxcEOqenNMEvhLQlKY_vRTfoW0L-CI8OA87uztFLqX6niPlKwmarp6vjw-loyRGLyIwFsj1iIevORenAAg63_PTkonBgy6XrQ26B7PBwidJrvH3lVYwo3XVEr-dZShksGc2nflQpUsQdJBW8Pwi-ND8HeDe-3jlpbdlwfQXwjCO156V1lc9uUG90ccWbQ')"></i>
+
+<div class="tgme_widget_message_video_wrap" style="width:1080px;padding-top:133.33333333333%">
+  
+</div>
+<div class="message_video_play js-message_video_play"></div>
+<time class="message_video_duration js-message_video_duration">0:20</time>
+<div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Media is too big</div>
+    <span class="message_media_view_in_telegram">VIEW IN TELEGRAM</span>
+  </div>
+</div></a><div class="tgme_widget_message_text js-message_text" dir="auto"><b>Кейс: цифровая инсталляция для конференции &quot;Метч 2.0</b>&quot;.<br/><br/>Доброго времени суток.<br/>Закончился уже давно отпуск, вечные дела не отпускали и надо рассказать тебе читатель моего канала об ещё работе для той конференции.<br/><br/>Для стенда <b>&quot;Академия Дверей</b>&quot; нужно было придумать, как эффектно показать сразу <b>7 коллекций дверей</b>. Обычная презентация или слайд-шоу здесь точно не сработали бы — хотелось, чтобы люди действительно остановились у стенда.<br/><br/>Как показать 7 разных коллекций дверей на одной стойке и заставить людей залипнуть?<br/><br/>На каждом экране запускалась своя анимация, а вместе они складывались в синхронную композицию. Сначала зритель видел лавинообразное появление моделей дверей, затем внимание постепенно переключалось на палитры цветов, после чего цикл незаметно повторялся. Получилась бесконечная анимация, которая работала как самостоятельный арт-объект и привлекала внимание к стенду.<br/><br/><b>Задача:</b> Упаковать сложный продуктовый ряд в стильный digital-арт для офлайн-ивента.<br/><br/><b>Инструменты:</b> After Effects<br/><br/><tg-spoiler>Единственное &quot;НО&quot; —клиент так и не прислал кадры, как это выглядело вживую на самой конференции, но надеюсь должно быть так.<br/></tg-spoiler><br/>А как у вас проходит лето? Над чем сейчас работаете? Я немного пропал из инфополя и мне интересно, какие успехи у вас. Может быть, есть тема, о которой давно хотели увидеть пост?<br/><br/>Всех обнял<tg-emoji emoji-id="5388790256772331442"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤️</b></i></tg-emoji><i><br/><br/></i><a href="?q=%23motionthismedia">#motionthismedia</a> <a href="?q=%23motiondesign">#motiondesign</a> <a href="?q=%23aftereffects">#aftereffects</a> <a href="?q=%23%D0%9C%D1%8D%D1%82%D1%87">#Мэтч</a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/motion_this/350" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_reactions js-message_reactions"><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29DA4.png')"><b>❤</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')"><b>🔥</b></i>8</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F8F86.png')"><b>🏆</b></i>4</span><span class="tgme_reaction"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F918D.png')"><b>👍</b></i>1</span></div><div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">96</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/motion_this/350"><time datetime="2026-06-28T06:02:09+00:00" class="time">06:02</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 185.04ms -->
