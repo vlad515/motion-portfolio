@@ -28,8 +28,15 @@ const projects = [
 
 const navItems = [
   ["Работы", "#work"],
+  ["Процесс", "#process"],
   ["Обо мне", "#about"],
   ["Контакт", "#contact"],
+];
+
+const studyModes = [
+  { id: "form", index: "01", title: "ФОРМА", titleEn: "FORM", description: "Объект, который хочется ощутить. 3D-форма и материал становятся главным языком истории.", tools: "CINEMA 4D / BLENDER", tone: "blue" },
+  { id: "rhythm", index: "02", title: "РИТМ", titleEn: "RHYTHM", description: "Монтаж, типографика и звук собираются в темп, который ведёт внимание без лишних объяснений.", tools: "AFTER EFFECTS / EDITING", tone: "cream" },
+  { id: "signal", index: "03", title: "СИГНАЛ", titleEn: "SIGNAL", description: "AI и VFX включаются только там, где они делают идею точнее, а не громче.", tools: "UNREAL / AI VIDEO / VFX", tone: "signal" },
 ];
 
 function MagneticLink({ children, href, className = "" }: { children: React.ReactNode; href: string; className?: string }) {
@@ -44,6 +51,7 @@ function MagneticLink({ children, href, className = "" }: { children: React.Reac
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeStudy, setActiveStudy] = useState("form");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48);
@@ -52,6 +60,7 @@ export default function Home() {
   }, []);
 
   const closeMenu = () => setMenuOpen(false);
+  const currentStudy = studyModes.find((study) => study.id === activeStudy) ?? studyModes[0];
 
   return (
     <main>
@@ -59,7 +68,7 @@ export default function Home() {
         <a className="brand-mark" href="#top" aria-label="На главную">
           <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="Кошачий знак VLAD MOTION" />
         </a>
-        <p className="header-role">VLAD MOTION<br />motion design</p>
+        <p className="header-role">VLAD KOCHENKOV<br />motion design</p>
         <nav className="desktop-nav" aria-label="Основная навигация">
           {navItems.map(([label, href], index) => (
             <a key={href} href={href}><span>0{index + 1}</span>{label}</a>
@@ -90,7 +99,7 @@ export default function Home() {
             <em>MOTION</em>
           </motion.h1>
           <motion.div className="hero-bottom" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.55 }}>
-            <p>Движение для идей, которым тесно в статике.</p>
+            <p>2D & 3D brand motion<br />Moscow / available worldwide</p>
             <a className="scroll-cue" href="#work" aria-label="Перейти к работам"><ArrowDownRight size={24} /></a>
           </motion.div>
         </div>
@@ -162,9 +171,33 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="motion-lab" id="process" aria-labelledby="process-title">
+        <div className="lab-rail" aria-hidden="true"><span>03 / MOTION SYSTEM</span><span>VLAD KOCHENKOV</span><span>LIVE STUDY</span></div>
+        <div className="lab-heading">
+          <p className="eyebrow"><span className="splice-line" />Внутри процесса <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
+          <h2 id="process-title">Движение<br />имеет <em>вес.</em></h2>
+          <p>Выберите параметр, чтобы посмотреть, из каких слоёв собирается мой подход к движению.</p>
+        </div>
+        <div className="lab-interface">
+          <div className={`lab-stage lab-stage--${currentStudy.tone}`}>
+            <div className="lab-orbit lab-orbit--one" /><div className="lab-orbit lab-orbit--two" /><div className="lab-orbit lab-orbit--three" />
+            <div className="lab-core"><span>{currentStudy.index}</span><strong>{currentStudy.titleEn}</strong></div>
+            <div className="lab-status"><span>PARAMETER / {currentStudy.index}</span><span>ACTIVE</span></div>
+          </div>
+          <div className="lab-controls" role="tablist" aria-label="Параметры моушн-процесса">
+            {studyModes.map((study) => (
+              <button className={`lab-control ${activeStudy === study.id ? "lab-control--active" : ""}`} type="button" role="tab" aria-selected={activeStudy === study.id} key={study.id} onClick={() => setActiveStudy(study.id)}>
+                <span>{study.index}</span><strong>{study.title}</strong><i>{study.titleEn}</i><ArrowUpRight size={17} aria-hidden="true" />
+              </button>
+            ))}
+            <div className="lab-note"><p>{currentStudy.description}</p><span>{currentStudy.tools}</span></div>
+          </div>
+        </div>
+      </section>
+
       <section className="about-section" id="about" aria-labelledby="about-title">
         <div className="about-mark" aria-hidden="true">/</div>
-        <aside className="about-ledger" aria-hidden="true"><span>03 / PROCESS ACT</span><span>FRAME 272–318</span><span>MODE / KADR</span></aside>
+        <aside className="about-ledger" aria-hidden="true"><span>04 / PROCESS ACT</span><span>FRAME 272–318</span><span>SIGNAL / VLAD</span></aside>
         <span className="about-seq-number" aria-hidden="true">03</span>
         <div className="about-copy">
           <p className="eyebrow"><span className="splice-line" />О практике <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
