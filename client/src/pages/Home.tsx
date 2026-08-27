@@ -1,6 +1,6 @@
 /**
  * KINETIC EDITORIAL — Home page
- * Black studio canvas, oversized Space Grotesk display type, Cut Red splice marks,
+ * Black studio canvas, oversized Space Grotesk display type, electric-blue splice marks,
  * asymmetric title-sequence composition and restrained motion. Does this reinforce the philosophy?
  */
 import { useEffect, useState } from "react";
@@ -10,18 +10,18 @@ import { motion } from "framer-motion";
 const projects = [
   {
     number: "01",
-    title: "RHYTHM",
-    type: "Brand film · 2025",
-    image: "/manus-storage/case-rhythm_72d1d826.jpg",
-    imageAlt: "Абстрактная композиция из красных акриловых дисков",
+    title: "КЕЙС / 01",
+    type: "Рил готовится к премьере",
+    tag: "MOTION FILM",
+    code: "00:01:12 / 25 FPS",
     className: "project-card--wide",
   },
   {
     number: "02",
-    title: "FORMS",
-    type: "Identity system · 2024",
-    image: "/manus-storage/case-forms_140bc471.jpg",
-    imageAlt: "Серебристая фольга с яркой круглой апертурой",
+    title: "КЕЙС / 02",
+    type: "Система выходит из монтажной",
+    tag: "IDENTITY SYSTEM",
+    code: "00:02:08 / 25 FPS",
     className: "project-card--tall",
   },
 ];
@@ -57,9 +57,9 @@ export default function Home() {
     <main>
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
         <a className="brand-mark" href="#top" aria-label="На главную">
-          <img src="/manus-storage/cut-mark_7f54b7c4.png" alt="Знак KADR STUDIO" />
+          <img src="/manus-storage/vlad-motion-mark_8819c82c.png" alt="Фирменный знак VLAD MOTION" />
         </a>
-        <p className="header-role">KADR STUDIO<br />motion direction</p>
+        <p className="header-role">VLAD MOTION<br />motion design</p>
         <nav className="desktop-nav" aria-label="Основная навигация">
           {navItems.map(([label, href], index) => (
             <a key={href} href={href}><span>0{index + 1}</span>{label}</a>
@@ -77,29 +77,29 @@ export default function Home() {
 
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-media" aria-hidden="true">
-          <img src="/manus-storage/kinetic-hero_acde037a.jpg" alt="" />
+          <img src="/manus-storage/blue-motion-hero_fab970bc.jpg" alt="" />
           <div className="hero-image-shade" />
         </div>
         <motion.div className="hero-meta" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.15 }}>
-          <span className="pulse-dot" />Принимаю новые брифы / осень 2026
+          <span className="pulse-dot" />Открыт к новым проектам / Москва
         </motion.div>
         <div className="hero-title-wrap">
           <motion.p className="eyebrow hero-eyebrow" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.25 }}>Portfolio / 2026</motion.p>
           <motion.h1 id="hero-title" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.85, delay: 0.28, ease: [0.23, 1, 0.32, 1] }}>
-            <span>KADR</span>
-            <em>STUDIO</em>
+            <span>VLAD</span>
+            <em>MOTION</em>
           </motion.h1>
           <motion.div className="hero-bottom" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.55 }}>
-            <p>Моушн для брендов, которым важно быть увиденными в движении.</p>
+            <p>Движение для идей, которым тесно в статике.</p>
             <a className="scroll-cue" href="#work" aria-label="Перейти к работам"><ArrowDownRight size={24} /></a>
           </motion.div>
         </div>
-        <div className="hero-index" aria-hidden="true">01 / OPENING <span>·</span> 04</div>
+        <div className="hero-index" aria-hidden="true">01 / MOSCOW <span>·</span> 04</div>
       </section>
 
       <section className="ticker" aria-label="Направления работы">
         <div className="ticker-track">
-          <span>Direction / Design / Animation <i>✳</i> KADR STUDIO / MOTION AS A SIGNAL <i>✳</i> Direction / Design / Animation <i>✳</i> KADR STUDIO / MOTION AS A SIGNAL <i>✳</i></span>
+          <span>Motion / Direction / Design <i>✳</i> VLAD MOTION / MOSCOW <i>✳</i> Motion / Direction / Design <i>✳</i> VLAD MOTION / MOSCOW <i>✳</i></span>
         </div>
       </section>
 
@@ -107,19 +107,22 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow"><span className="splice-line" />Selected work</p>
-            <h2 id="work-title">Кадры, где<br />форма <em>говорит.</em></h2>
+            <h2 id="work-title">Новые работы<br /><em>в монтаже.</em></h2>
           </div>
-          <p className="section-note">Визуальные системы, титры и движущиеся истории — от первого эскиза до финального кадра.</p>
+          <p className="section-note">Кейсы появятся здесь по мере выхода. Пока — место для следующих сильных кадров.</p>
         </div>
 
         <div className="project-grid">
           {projects.map((project) => (
-            <a className={`project-card ${project.className}`} key={project.number} href="#contact" aria-label={`Открыть кейс ${project.title}`}>
-              <div className="project-frame">
-                <img src={project.image} alt={project.imageAlt} />
+            <a className={`project-card ${project.className}`} key={project.number} href="#contact" aria-label={`Обсудить ${project.title}`}>
+              <div className="project-frame project-frame--pending">
                 <div className="frame-corner frame-corner--top" />
                 <div className="frame-corner frame-corner--bottom" />
-                <span className="view-project">View project <ArrowUpRight size={17} /></span>
+                <div className="frame-data"><span>V.M / UNRELEASED</span><span>{project.code}</span></div>
+                <div className="frame-crop frame-crop--horizontal" /><div className="frame-crop frame-crop--vertical" />
+                <p className="pending-meta">{project.tag}</p>
+                <strong>{project.number}</strong>
+                <span className="view-project">Запросить слот <ArrowUpRight size={17} /></span>
               </div>
               <div className="project-caption">
                 <span className="project-number">{project.number}</span>
@@ -138,7 +141,7 @@ export default function Home() {
             <div className="project-caption">
               <span className="project-number">03</span>
               <h3>NEXT TAKE</h3>
-              <p>Concept development</p>
+              <p>Открытый слот</p>
             </div>
           </a>
         </div>
@@ -147,10 +150,12 @@ export default function Home() {
       <section className="about-section" id="about" aria-labelledby="about-title">
         <div className="about-mark" aria-hidden="true">/</div>
         <aside className="about-ledger" aria-hidden="true"><span>03 / PROCESS ACT</span><span>FRAME 272–318</span><span>MODE / KADR</span></aside>
+        <span className="about-seq-number" aria-hidden="true">03</span>
         <div className="about-copy">
-          <p className="eyebrow"><span className="splice-line" />About the practice</p>
+          <p className="eyebrow"><span className="splice-line" />О практике</p>
           <h2 id="about-title">Идея не должна<br />стоять на <em>месте.</em></h2>
           <p className="about-lead">Я работаю между стратегией и ощущением: нахожу визуальное напряжение, собираю систему и задаю ей ритм.</p>
+          <p className="about-caption">Moscow / Direction / 2026<br />Каждый кадр должен менять интонацию.</p>
           <div className="services-list">
             <p><span>01</span> Motion identity</p>
             <p><span>02</span> Campaign systems</p>
@@ -158,7 +163,7 @@ export default function Home() {
           </div>
         </div>
         <div className="about-sidebar">
-          <p>База<br /><strong>Казань / 55°47′N</strong></p>
+          <p>База<br /><strong>Москва / 55°45′N</strong></p>
           <p>Коллаборации<br /><strong>Без границ</strong></p>
           <MagneticLink href="#contact">Войти в кадр</MagneticLink>
         </div>
@@ -168,9 +173,9 @@ export default function Home() {
         <div className="contact-topline"><span>04 / Связь</span><span>Конец рила. Начало разговора.</span></div>
         <h2 id="contact-title">Поговорим<br />в <em>эфире.</em></h2>
         <div className="contact-footer">
-          <a className="email-link" href="mailto:hello@kadr.studio">hello@kadr.studio <ArrowUpRight size={30} strokeWidth={1.35} /></a>
+          <a className="email-link" href="mailto:vlad.515@gmail.com">vlad.515@gmail.com <ArrowUpRight size={30} strokeWidth={1.35} /></a>
           <div className="social-links"><a href="#top">Instagram</a><a href="#top">LinkedIn</a><a href="#top">Behance</a></div>
-          <p>© 2026 / KADR STUDIO<br />signal over noise</p>
+          <p>© 2026 / VLAD MOTION<br />signal over noise</p>
         </div>
       </section>
     </main>
