@@ -57,7 +57,7 @@ export default function Home() {
     <main>
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`}>
         <a className="brand-mark" href="#top" aria-label="На главную">
-          <img src="/manus-storage/vlad-motion-mark_8819c82c.png" alt="Фирменный знак VLAD MOTION" />
+          <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="Кошачий знак VLAD MOTION" />
         </a>
         <p className="header-role">VLAD MOTION<br />motion design</p>
         <nav className="desktop-nav" aria-label="Основная навигация">
@@ -106,7 +106,7 @@ export default function Home() {
       <section className="work-section" id="work" aria-labelledby="work-title">
         <div className="section-heading">
           <div>
-            <p className="eyebrow"><span className="splice-line" />Selected work</p>
+            <p className="eyebrow"><span className="splice-line" />Selected work <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
             <h2 id="work-title">Новые работы<br /><em>в монтаже.</em></h2>
           </div>
           <p className="section-note">Кейсы появятся здесь по мере выхода. Пока — место для следующих сильных кадров.</p>
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <div className="project-caption">
               <span className="project-number">03</span>
-              <h3>NEXT TAKE</h3>
+              <h3>TAKE / 03</h3>
               <p>Открытый слот</p>
             </div>
           </a>
@@ -152,7 +152,7 @@ export default function Home() {
         <aside className="about-ledger" aria-hidden="true"><span>03 / PROCESS ACT</span><span>FRAME 272–318</span><span>MODE / KADR</span></aside>
         <span className="about-seq-number" aria-hidden="true">03</span>
         <div className="about-copy">
-          <p className="eyebrow"><span className="splice-line" />О практике</p>
+          <p className="eyebrow"><span className="splice-line" />О практике <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
           <h2 id="about-title">Идея не должна<br />стоять на <em>месте.</em></h2>
           <p className="about-lead">Я работаю между стратегией и ощущением: нахожу визуальное напряжение, собираю систему и задаю ей ритм.</p>
           <p className="about-caption">Moscow / Direction / 2026<br />Каждый кадр должен менять интонацию.</p>
@@ -170,12 +170,25 @@ export default function Home() {
       </section>
 
       <section className="contact-section" id="contact" aria-labelledby="contact-title">
-        <div className="contact-topline"><span>04 / Связь</span><span>Конец рила. Начало разговора.</span></div>
-        <h2 id="contact-title">Поговорим<br />в <em>эфире.</em></h2>
-        <div className="contact-footer">
-          <a className="email-link" href="mailto:vlad.515@gmail.com">vlad.515@gmail.com <ArrowUpRight size={30} strokeWidth={1.35} /></a>
-          <div className="social-links"><a href="#top">Instagram</a><a href="#top">LinkedIn</a><a href="#top">Behance</a></div>
-          <p>© 2026 / VLAD MOTION<br />signal over noise</p>
+        <div className="contact-topline"><span>04 / Link up</span><span>Москва · работа по всему миру</span></div>
+        <div className="contact-stage">
+          <div className="contact-copy">
+            <p className="eyebrow">Сигнал связи / 04</p>
+            <h2 id="contact-title">Точка<br /><em>связи.</em></h2>
+            <p className="contact-description">Напишите пару строк о задаче. Я отвечу с направлением и следующим шагом.</p>
+          </div>
+          <div className="contact-signal" aria-hidden="true">
+            <span className="signal-label signal-label--top">CHANNEL / VLAD.MOTION</span>
+            <span className="signal-label signal-label--bottom">CHANNEL OPEN / 24–7</span>
+            <div className="signal-ring signal-ring--outer" />
+            <div className="signal-ring signal-ring--inner" />
+            <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" />
+          </div>
+        </div>
+        <div className="contact-footer contact-footer--terminal">
+          <a className="email-link" href="mailto:vlad.515@gmail.com"><span>Direct channel / e-mail</span><strong>vlad.515@gmail.com</strong><ArrowUpRight size={25} strokeWidth={1.45} /></a>
+          <div className="social-links"><a href="https://www.instagram.com/vlad515/" target="_blank" rel="noreferrer">Instagram <ArrowUpRight size={14} /></a><a href="https://www.linkedin.com/in/vlad515/" target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight size={14} /></a><a href="https://www.behance.net/vlad515" target="_blank" rel="noreferrer">Behance <ArrowUpRight size={14} /></a></div>
+          <p>© 2026 / VLAD KOCHENKOV<br />MOTION DESIGN · MOSCOW</p>
         </div>
       </section>
     </main>
