@@ -29,6 +29,7 @@ const projects = [
 const navItems = [
   ["Работы", "#work"],
   ["Процесс", "#process"],
+  ["Канал", "#channel"],
   ["Обо мне", "#about"],
   ["Контакт", "#contact"],
 ];
@@ -195,10 +196,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="channel-section" id="channel" aria-labelledby="channel-title">
+        <div className="channel-number" aria-hidden="true">04</div>
+        <div className="channel-heading">
+          <p className="eyebrow"><span className="splice-line" />Side channel / Telegram</p>
+          <h2 id="channel-title">Моушенируй<br /><em>это.</em></h2>
+        </div>
+        <div className="channel-panel">
+          <div className="channel-panel-top"><span>TELEGRAM / @MOTION_THIS</span><span>ACTIVE CHANNEL</span></div>
+          <div className="channel-core">
+            <img src="/manus-storage/vlad-cat-mark_98340d24.png" alt="Кошачий знак канала Моушенируй это" />
+            <div className="channel-core-copy">
+              <p>Кейсы, моушн-приёмы и AI в реальной работе.</p>
+              <p>WIP, инструменты, промпты и разборы — без шума.</p>
+            </div>
+          </div>
+          <div className="channel-topics" aria-label="Темы канала"><span>WIP</span><span>TOOLS</span><span>PROMPTS</span><span>BREAKDOWNS</span></div>
+          <a className="channel-link" href="https://t.me/motion_this" target="_blank" rel="noreferrer"><span>Открыть канал</span><ArrowUpRight size={24} /></a>
+        </div>
+        <p className="channel-side-note">Здесь я показываю не только результат, но и решения, которые приводят к движению.</p>
+      </section>
+
       <section className="about-section" id="about" aria-labelledby="about-title">
         <div className="about-mark" aria-hidden="true">/</div>
-        <aside className="about-ledger" aria-hidden="true"><span>04 / PROCESS ACT</span><span>FRAME 272–318</span><span>SIGNAL / VLAD</span></aside>
-        <span className="about-seq-number" aria-hidden="true">03</span>
+        <aside className="about-ledger" aria-hidden="true"><span>05 / PROCESS ACT</span><span>FRAME 272–318</span><span>SIGNAL / VLAD</span></aside>
+        <span className="about-seq-number" aria-hidden="true">05</span>
         <div className="about-copy">
           <p className="eyebrow"><span className="splice-line" />О практике <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
           <h2 id="about-title">Идея не должна<br />стоять на <em>месте.</em></h2>
@@ -218,7 +240,7 @@ export default function Home() {
       </section>
 
       <section className="contact-section" id="contact" aria-labelledby="contact-title">
-        <div className="contact-topline"><span>04 / Link up</span><span>Москва · работа по всему миру</span></div>
+        <div className="contact-topline"><span>06 / Link up</span><span>Москва · работа по всему миру</span></div>
         <div className="contact-stage">
           <div className="contact-copy">
             <p className="eyebrow">Сигнал связи / 04</p>
