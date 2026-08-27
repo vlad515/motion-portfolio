@@ -10,19 +10,33 @@ import { motion } from "framer-motion";
 const projects = [
   {
     number: "01",
-    title: "КЕЙС / 01",
-    type: "Рил готовится к премьере",
-    tag: "MOTION FILM",
-    code: "00:01:12 / 25 FPS",
+    title: "Дизайн упаковки для секс-игрушек",
+    type: "Sex toys packaging",
+    category: "Брендинг",
+    image: "/manus-storage/case-sex-toys-packaging_73d433b0.png",
+    imageAlt: "Дизайн упаковки для секс-игрушек",
+    href: "https://dprofile.ru/case/69522/dizain-upakovki-dlia-seks-igrusek-sex-toys-packaging",
     className: "project-card--wide",
   },
   {
     number: "02",
-    title: "КЕЙС / 02",
-    type: "Система выходит из монтажной",
-    tag: "IDENTITY SYSTEM",
-    code: "00:02:08 / 25 FPS",
+    title: "Chin Miao",
+    type: "Ресторан китайской кухни",
+    category: "Брендинг / Графика",
+    image: "/manus-storage/case-chin-miao_274dfdf4.png",
+    imageAlt: "Фирменная графика ресторана Chin Miao",
+    href: "https://dprofile.ru/case/10899/chin-miao",
     className: "project-card--tall",
+  },
+  {
+    number: "03",
+    title: "Neos",
+    type: "Брендинг для кроссовок",
+    category: "Брендинг / Графика",
+    image: "/manus-storage/case-neos_4d2d1921.png",
+    imageAlt: "Брендинг Neos на упаковке и карточках",
+    href: "https://dprofile.ru/case/10898/neos",
+    className: "project-card--third",
   },
 ];
 
@@ -139,15 +153,13 @@ export default function Home() {
 
         <div className="project-grid">
           {projects.map((project) => (
-            <a className={`project-card ${project.className}`} key={project.number} href="#contact" aria-label={`Обсудить ${project.title}`}>
-              <div className="project-frame project-frame--pending">
+            <a className={`project-card ${project.className}`} key={project.number} href={project.href} target="_blank" rel="noreferrer" aria-label={`Открыть кейс «${project.title}» на Dprofile`}>
+              <div className="project-frame">
                 <div className="frame-corner frame-corner--top" />
                 <div className="frame-corner frame-corner--bottom" />
-                <div className="frame-data"><span>V.M / UNRELEASED</span><span>{project.code}</span></div>
-                <div className="frame-crop frame-crop--horizontal" /><div className="frame-crop frame-crop--vertical" />
-                <p className="pending-meta">{project.tag}</p>
-                <strong>{project.number}</strong>
-                <span className="view-project">Запросить слот <ArrowUpRight size={17} /></span>
+                <img src={project.image} alt={project.imageAlt} />
+                <div className="project-film-label"><span>{project.category}</span><span>CASE / {project.number}</span></div>
+                <span className="view-project">Смотреть кейс <ArrowUpRight size={17} /></span>
               </div>
               <div className="project-caption">
                 <span className="project-number">{project.number}</span>
@@ -156,19 +168,6 @@ export default function Home() {
               </div>
             </a>
           ))}
-          <a className="project-card project-card--type" href="#contact" aria-label="Обсудить следующий проект">
-            <div className="type-slab">
-              <p className="eyebrow">03 / На таймлайне</p>
-              <div className="type-slab-word">TAKE</div>
-              <span className="plus-mark"><Plus size={31} strokeWidth={1.5} /></span>
-              <p className="type-slab-foot">Следующий кадр<br />ещё не снят.</p>
-            </div>
-            <div className="project-caption">
-              <span className="project-number">03</span>
-              <h3>TAKE / 03</h3>
-              <p>Открытый слот</p>
-            </div>
-          </a>
         </div>
       </section>
 
