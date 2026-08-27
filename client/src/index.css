@@ -88,6 +88,19 @@ button { color: inherit; }
 .ticker i { color: var(--cut-red); font-style: normal; padding: 0 .8em; }
 @keyframes ticker-roll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
+.showreel-section { background: #101116; overflow: hidden; padding: 128px 28px 148px; position: relative; }
+.showreel-section::before { border: 1px solid rgba(21,91,255,.38); border-radius: 50%; content: ""; height: min(46vw, 680px); position: absolute; right: -18vw; top: -17vw; width: min(46vw, 680px); }
+.showreel-heading { align-items: flex-end; display: flex; justify-content: space-between; margin: 0 auto 55px; max-width: 1120px; position: relative; }
+.showreel-heading h2 { font-size: clamp(3.25rem, 7vw, 7.4rem); font-weight: 600; letter-spacing: -.09em; line-height: .8; margin: 0; text-transform: uppercase; }
+.showreel-heading h2 em { color: var(--cut-red); font-style: italic; }
+.showreel-heading > p { color: rgba(245,241,233,.64); font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: .04em; line-height: 1.6; margin: 0 0 6px; max-width: 275px; text-transform: none; }
+.showreel-player { aspect-ratio: 16 / 9; box-shadow: 0 25px 80px rgba(0,0,0,.45); margin: 0 auto; max-width: 1120px; position: relative; }
+.showreel-player iframe { border: 0; display: block; height: 100%; position: relative; width: 100%; z-index: 1; }
+.showreel-corner { border-color: var(--cut-red); border-style: solid; height: 36px; position: absolute; width: 36px; z-index: 2; }
+.showreel-corner--tl { border-width: 1px 0 0 1px; left: -11px; top: -11px; }
+.showreel-corner--br { border-width: 0 1px 1px 0; bottom: -11px; right: -11px; }
+.showreel-caption { bottom: -28px; color: rgba(245,241,233,.54); display: flex; font-family: "DM Mono", monospace; font-size: 9px; justify-content: space-between; left: 0; letter-spacing: .05em; position: absolute; right: 0; text-transform: uppercase; }
+
 .work-section { padding: 170px 28px 162px; }
 .section-heading { align-items: flex-end; display: flex; justify-content: space-between; margin-bottom: 87px; }
 .eyebrow { color: var(--cut-red); margin: 0 0 22px; }
@@ -205,6 +218,13 @@ button { color: inherit; }
   .scroll-cue { height: 42px; width: 42px; }
   .hero-index { bottom: 32px; right: 18px; }
   .ticker { padding: 8px 0; }
+  .showreel-section { padding: 92px 18px 104px; }
+  .showreel-heading { align-items: flex-start; flex-direction: column; gap: 26px; margin-bottom: 38px; }
+  .showreel-heading h2 { font-size: clamp(3rem, 15vw, 5.3rem); }
+  .showreel-heading > p { max-width: 250px; }
+  .showreel-player { aspect-ratio: 16 / 10; }
+  .showreel-caption { bottom: -24px; font-size: 7px; }
+  .showreel-corner { height: 25px; width: 25px; }
   .work-section { padding: 104px 18px 110px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 27px; margin-bottom: 48px; }
   .section-heading h2, .about-copy h2 { font-size: clamp(3rem, 14vw, 5.8rem); }

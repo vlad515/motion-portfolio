@@ -103,6 +103,21 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="showreel-section" aria-labelledby="showreel-title">
+        <div className="showreel-heading">
+          <div>
+            <p className="eyebrow"><span className="splice-line" />00 / Showreel <img className="section-cat-mark" src="/manus-storage/vlad-cat-mark_98340d24.png" alt="" /></p>
+            <h2 id="showreel-title">Смотреть<br /><em>шоурил.</em></h2>
+          </div>
+          <p>57 секунд движения: 2D и 3D моушн, предметная визуализация, симуляции и кинетическая типографика.</p>
+        </div>
+        <div className="showreel-player">
+          <div className="showreel-corner showreel-corner--tl" /><div className="showreel-corner showreel-corner--br" />
+          <iframe src="https://www.youtube-nocookie.com/embed/inF690u-h1s?rel=0&modestbranding=1" title="Vlad Kochenkov — Motion Designer Showreel 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+          <div className="showreel-caption"><span>VLAD KOCHENKOV / SHOWREEL 2025</span><span>00:57 / PLAY IN PLACE</span></div>
+        </div>
+      </section>
+
       <section className="work-section" id="work" aria-labelledby="work-title">
         <div className="section-heading">
           <div>
